@@ -1,0 +1,393 @@
+/* root start */
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body {
+    width: 100%;
+    overflow: scroll;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* root end */
+
+/* background-utama start */
+#bg-main{
+    background-image: url("/assets/img/bg-main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    margin: 0 auto;
+}
+#bg-main form {
+    display: flex;
+    flex-direction: column;
+    width: 30vh;
+    margin: 10px auto;
+    gap: 0.5rem;
+}
+#bg-main form input#nama {
+    text-align: center;
+}
+#bg-main form input#password {
+    text-align: center;
+}
+#bg-main .text {
+    margin: 0 auto;
+    line-height: 2rem;
+}
+#bg-main .main {
+    background: rgba(130, 91, 91, 0.822);
+    position: relative;
+    top: 10%;
+    margin: 0 auto;
+    width: 75%;
+    height: 75%;
+    border-radius: 5rem;
+}
+.text span {
+    font-family: 'PT Sans Narrow';
+    font-size: 1.5rem; 
+    display:flex;
+    justify-content: center;
+    letter-spacing: 0.5rem;
+}
+
+.text h2 {
+    font-size: 0.8rem;
+    display:flex;
+    justify-content: center;
+}
+.text h1 {
+    font-size: 1.6rem;
+    text-align: center;
+}
+.text p {
+    text-align: center;
+    font-size: 2.5vh;
+}
+#bg-main .quote{
+    margin: 20px auto 20px auto;
+    text-align: center;
+    background-color: rgba(255,255,255, 0.4);
+    max-width: 400px;
+}
+#bg-main .time {
+    margin: 1rem auto;
+    text-align: center;
+    background-color: rgba(255,255,255, 0.4);
+    max-width: 400px;
+    padding: 0.5rem;
+}
+/* background-utama end */
+
+
+/* nav start */
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: rgb(45, 178, 201);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.nav .nav-menu {
+    display: flex;
+    flex-direction: row ;
+}
+.nav-menu .icon-menu {
+    text-align: center;
+    padding: 0.8rem;
+}
+.nav-menu .icon-menu span {
+    display: flex;
+    flex-direction: row;
+    color:black;
+}
+.nav-music .music-bg {
+    text-align: center;
+}
+
+.nav-menu .time {
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+.navbar-brand {
+    position: absolute;
+    left: 4rem;
+    top: 1.6rem;
+}
+/* nav-end */
+
+/* home start */
+section#home {
+    background-image: url('/assets/img/sungai.jpg');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    height: 100vh;
+}
+
+section #img-home {
+    object-fit: cover;
+    width: 80%;
+    height: 83vh;
+    position: relative;
+    left: 10%;
+    margin: 9% auto;
+    border-radius: 50%;
+}
+/* home end */
+
+/* lokasi start */
+section#lokasi {
+    background-image: url('/assets/img/map-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;
+}
+section #iframe {
+    position: relative;
+    left: 25%;
+    top: 15%;
+    margin: 2% auto;
+}
+/* lokasi end */
+
+/* kirim doa start */
+form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 7rem;
+    margin: 0 auto;
+    max-width: 30%;
+    gap: 1rem;
+    background-color: antiquewhite;
+    text-align: center;
+    height: 80%;
+}
+form#login {
+    border: none;
+    overflow: hidden;
+    height: auto;
+    position: relative;
+    top: -0px;
+    background: none;
+}
+form #submit {
+    width: 30%;
+    margin: 0 auto;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    /* top: -65%; */
+    right: 0%;
+}
+section#doa {
+    background-image: url('/assets/img/pesan-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;
+}
+.kirimPesan {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.kirimPesan .nama {
+    color: black;
+    font-weight: bold;
+    font-family: 'PT Sans Narrow', Courier, monospace;
+    line-height: 0.5rem;
+}
+
+/* kirim doa end */
+
+/* galeri start */
+section#galeri {
+    height: 100vh;
+    background-image: url('/assets/img/galeri-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cards {
+    margin: 16% auto;
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+}
+.cards .card img {
+    width: 100%;
+    height: 100%;
+}
+
+.cards .card {
+    margin: 1rem;
+}
+center {
+    position: relative;
+    top: 150px;
+    background: rgba(255,255,255, 0.4);
+    width: 50%;
+    margin: auto;
+    font-size: 20px;
+}
+center span {
+    font-family: 'PT Sans Narrow';
+    letter-spacing: 0.2rem;
+    font-size: 23px;
+    font-weight: bold;
+}
+/* galeri end */
+
+/* even start */
+section#even{
+    height: 100vh;
+    background-color:rgb(75, 82, 88);
+}
+
+.container {
+    object-fit: cover;
+    border: 3px solid black;
+    background-image: url('/assets/img/even-bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.even {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    height: 100vh;
+}
+.even .icon-hati{
+    display: flex;
+    flex-direction: column;
+}
+.even #hand-heart {
+    font-size: 50px;
+    background-color: black;
+    width: 40%;
+    height: auto;
+    border-radius: 50%;
+    color: wheat;
+    margin: 0 auto;
+    object-fit: cover;
+}
+.even .tanggal {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.even .tanggal  #calendar-check {
+    font-size: 25px;
+    background-color: black;
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+    color: wheat;
+    margin: 0 auto;
+}
+
+.even .jam {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.even .jam #alarm-check {
+    font-size: 25px;
+    background-color: black;
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+    color: wheat;
+    margin: 0 auto;
+}
+
+.even #resepsi {
+    font-style: italic;
+    font-family: 'PT Sans Narrow';
+    font-size: 30px;
+    text-shadow: 4 4 4 black;
+    margin-top: 1rem;
+}
+.even .alamat {
+    margin: 5% auto;
+}
+.even .alamat h2 {
+    font-size: 20px;
+}
+.even .alamat p {
+    line-height: 1rem;
+    font-size: 15px;
+}
+.even p {
+    line-height: 0.5rem;    
+    /* margin-top: 1rem; */
+}
+/* even end */
+
+/* pasangan start */
+section#pasangan {
+    height: 100vh;
+    background-image: url('/assets/img/couple-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#couple {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+#pasangan .textCouple {
+    width: 25%;
+    padding: 0;
+    margin: 1rem;
+    text-align: center;
+}
+
+.cardsCouple {
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    left: 0rem;
+    padding: 1rem;
+    gap: 10px;
+}
+.cardCouple {
+    width: 100%;
+    background-color: bisque;
+}
+/* pasangan end */
