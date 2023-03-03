@@ -1,5 +1,5 @@
 const audioPlayPause = () => {
-    const playPause = document.querySelector('i')
+    const playPause = document.querySelector('i#playPause')
     const audio = document.querySelector('#audio')
 
     if (audio.paused) {
