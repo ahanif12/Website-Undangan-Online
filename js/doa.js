@@ -1,3 +1,4 @@
+
 const dataArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [] 
 
 // function utama ini untuk submit

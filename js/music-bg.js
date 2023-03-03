@@ -12,4 +12,3 @@ const audioPlayPause = () => {
         playPause.classList.remove('fa-play')
     }
 }
-
