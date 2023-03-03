@@ -3,6 +3,7 @@ const dataArray = localStorage.getItem('items') ? JSON.parse(localStorage.getIte
 // function utama ini untuk submit
 const submit = document.querySelector('#submit')
 submit.addEventListener('click', function (el){
+    el.preventDefault()
     const inputNama = document.querySelector('#name')
     
     const inputPesan = document.querySelector('#textPesan')

@@ -41,18 +41,14 @@
             <p>"Seeing your smile is happiness for me.
                 Meanwhile, having you is the most beautiful gift in my life."</p>
         </center>
-        <div class="cards">
-            <div class="card">
-                <img src="assets/img/galeri1.jpeg" alt="galeri1" class="card-image-top">
-            </div>
-            <div class="card">
-                <img src="assets/img/galeri2.jpeg" alt="galeri2" class="card-image-top">
-            </div>
-            <div class="card">
-                <img src="assets/img/galeri3.jpeg" alt="galeri3" class="card-image-top">
-            </div>
-            <div class="card">
-                <img src="assets/img/galeri4.jpeg" alt="galeri4" class="card-image-top">
+        <div class="container" id="container-galeri">
+            <div class="row" >
+                <div id="col" class="col-lg-2 offset-lg-2 d-lg-flex m-0 w-100">
+                        <img src="assets/img/galeri1.jpeg" class="rounded ">
+                        <img src="assets/img/galeri2.jpeg" class="rounded">
+                        <img src="assets/img/galeri3.jpeg" class="rounded ">
+                        <img src="assets/img/galeri4.jpeg" class="rounded">
+                </div>
             </div>
         </div>
     </section>
@@ -60,9 +56,9 @@
 
     <!-- even start -->
     <section id="even">
-        <div class="container w-25">
+        <div id="container-even" class="container">
             <div class="row">
-                <div class="col-8 offset-2">
+                <div class="col-lg-8 offset-lg-2">
                     <div class="even">
                         <div class="icon-hati">
                             <span id="hand-heart" class="mdi mdi-hand-heart"></span>
@@ -110,8 +106,7 @@
                     </div>
                 </div>
                 <div class="cardCouple">
-                    <img src="assets/img/couple-wanita.jpeg" 
-                    style="width: 100%; height: auto; object-fit: cover;">
+                    <img  id="couple-wanita" src="assets/img/couple-wanita.jpeg">
                     <h2 style="text-align: center;">Ani Eviani</h2>
                     <div style="margin: 15% auto;">
                         <h4 style="text-align: center;">Putri Kedua dari </h4>
@@ -146,8 +141,8 @@
                 </div>
                 <div class="icon-menu">
                     <a class="text-decoration-none" href="#doa">
-                        <i class="text-primary" data-feather="heart"></i>
-                        <span>Kirim Pesan</span>
+                        <i class="text-primary fa fa-paper-plane fs-3"></i>
+                        <span>Pesan</span>
                     </a>
                 </div>
                 <div class="icon-menu">
