@@ -1,21 +1,7 @@
 const countdownPernikahan = document.querySelector('.countdownTime');
-const nowTime = document.querySelector('.nowTime')
-
-// nowTime
-const time = () => {
-    const now = new Date();
-
-    const hours = now.getHours()
-    const minutes = now.getMinutes()
-    const second = now.getSeconds()
-    nowTime.innerHTML = '<span>' +  hours + ' : ' + minutes + ' : ' + second + '</span>'
-}
-setInterval(time, 1000)
-
-
 
 // Countdown
-const countdown = new Date('Mar 03, 2023')
+const countdown = new Date('Mar 25, 2023')
 const setCountdown = setInterval(() => {
     const now = new Date()
 
@@ -26,5 +12,7 @@ const setCountdown = setInterval(() => {
     const minute = Math.floor((distance % (1000 * 60 * 60) / (1000 * 60)));
     const second = Math.floor((distance % (1000 * 60) / (1000)));
 
-    countdownPernikahan.innerHTML = '<span> ' + days + ' : ' + hours + ' : ' + minute + ' : ' + second + ' </span>'
+    countdownPernikahan.innerHTML = '<div id="jamDigital" >' + 
+    '<div id="jamDigital1" >' + 
+    '<span> ' + days + ' : ' + hours + ' : ' + minute + ' : ' + second + ' </span>' + '</div>' + '<div id="textDigital">' + '<span>Hari</span>' + '<span>Jam</span>' + '<span>Menit</span>' + '<span>Detik</span>' + '</div>' + '</div>'
 });

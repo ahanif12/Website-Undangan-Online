@@ -4,38 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
-<body>
+<body> 
     <!-- beranda start -->
     <section id="home">
-        <img src="assets/img/bg-main.jpg" alt="" id="img-home">
+        <img class="rounded-lg-circle" src="assets/img/bg-main.jpg" alt="" id="img-home">
+        <div class="nav-music">
+            <div class="music-bg">
+                <i id="playPause" onclick="audioPlayPause()" class="fa fa-pause fs-4"></i>
+                <audio id="audio" src="assets/audio/Keisya Levronka - Tak Ingin Usai (Official Music Video).m4a" autoplay></audio>
+            </div>
+        </div>
     </section>
     <!-- beranda end -->
 
     <!-- lokasi start -->
     <section id="lokasi">
-        <iframe id="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.657750500995!2d106.76714951424186!3d-6.30861549543427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69efb4af14b53f%3A0xdd845420154a825f!2sKinaya%20Residence%20Cirendeu!5e0!3m2!1sid!2sid!4v1677521383245!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="lokasiAcara">
+            <span>Lokasi Acara</span>
+        </div>
+        <div id="containerIframe">
+            <iframe id="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.657750500995!2d106.76714951424186!3d-6.30861549543427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69efb4af14b53f%3A0xdd845420154a825f!2sKinaya%20Residence%20Cirendeu!5e0!3m2!1sid!2sid!4v1677521383245!5m2!1sid!2sid" width="80%" height="80%" style="margin: auto; display: flex; justify-content: center; padding-top: 1rem;" allowfullscreen=""></iframe>
+        </div>
     </section>
     <!-- lokasi end -->
-
-    <!-- kirim doa start -->
+    <!-- pesan start -->
     <section id="doa">
-        <form id="pesan" >
-            <input id="name" type="text" placeholder="Nama">
-            <textarea name="pesan" id="textPesan" placeholder="Pesan Anda"></textarea>
-            <button id="submit"  type="submit">KIRIM</button>
-            <div class="output"></div>
-        </form>
+        <div id="doaCollection">
+            <div id="textUcapan">
+                <span>Ucapkan Sesuatu</span>
+                <span>Untuk Kami Berdua</span>
+            </div>
+            <form id="pesan" >
+                <input id="name" type="text" placeholder="Nama">
+                <input name="pesan" id="textPesan" placeholder="Pesan Anda" />
+                <button id="submit"  type="submit">KIRIM</button>
+                <div class="output"></div>
+            </form>
+        </div>
     </section>
-    <!-- kirim doa end -->
+    <!-- pesan end -->
 
     <!-- gallery start -->
     <section id="galeri">
+        <div id="judulGaleri">Gallery</div>
         <center>
             <span>Our Moments</span> 
             <p>"Seeing your smile is happiness for me.
@@ -82,6 +99,13 @@
                 </div>
             </div>
         </div>
+
+        <div class="time">
+            <div id="countdownTime">
+                <span id="estimasi">Estimasi ke Pernikahan</span>
+                <div class="countdownTime"></div>
+            </div>
+        </div>
     </section>
     <!-- even end -->
 
@@ -118,84 +142,55 @@
     </section>
     <!-- pasangan end -->
 
-
-    <!-- nav start -->
-
-    <div class="nav-bar">
-        <div class="nav">
-            <div class="nav-menu">
-                <div class="navbar-brand">
-                    <p style="font-size:25px; font-weight: bold;">NadiaCoding <span style="color: burlywood; font-size:25px; font-weight: bold;">Wedding</span></p>
-                </div>
-                <div class="icon-menu">
-                    <a class="text-decoration-none" href="#home">
-                        <i class="text-success" data-feather="home"></i>
-                        <span>Home</span>
-                    </a>
-                </div>
-                <div class="icon-menu">
-                    <a class="text-decoration-none" href="#lokasi">
-                        <i class="text-danger" data-feather="map-pin"></i>
-                        <span>Lokasi</span>
-                    </a>
-                </div>
-                <div class="icon-menu">
-                    <a class="text-decoration-none" href="#doa">
-                        <i class="text-primary fa fa-paper-plane fs-3"></i>
-                        <span>Pesan</span>
-                    </a>
-                </div>
-                <div class="icon-menu">
-                    <a class="text-decoration-none" href="#galeri">
-                        <i class="text-info" data-feather="book-open"></i>
-                        <span>Galeri</span>
-                    </a>
-                </div>
-                <div class="icon-menu">
-                    <a class="text-decoration-none" href="#even">
-                        <i class="text-warning" data-feather="tv"></i>
-                        <span>Even</span>
-                    </a>
-                </div>
-                <div class="icon-menu">
-                    <a class="text-decoration-none" href="#pasangan">
-                        <i class="text-secondary" data-feather="users"></i>
-                        <span>Pasangan</span>
-                    </a>
-                </div>
-
-                <div class="time">
-                    <div id="nowTime">
-                        <span>Jam</span>
-                        <div class="nowTime"></div>
-                    </div>
-                    <div id="countdownTime">
-                        <span>Estimasi ke Pernikahan</span>
-                        <div class="countdownTime"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="nav-music">
-                <div class="music-bg">
-                    <i id="playPause" onclick="audioPlayPause()" class="fa fa-pause"></i>
-                    <audio id="audio" src="assets/audio/Keisya Levronka - Tak Ingin Usai (Official Music Video).m4a" autoplay></audio>
-                </div>
-            </div>
+    <!-- nav-start -->
+    <nav class="navbar-lg  navbar-expand-lg position-fixed bottom-0 w-100">
+        <div class="container-fluid d-flex justify-content-center">
+                  <ul id="navbar-nav" class="navbar-nav fs-5 position-absolute bottom-0 bg-info w-100  text-center d-flex flex-row justify-content-center">
+                      <li class="navbar-item">
+                          <a href="#home" class="nav-link active">
+                            <i class="text-success" data-feather="home"></i>
+                            <span>Home</span>
+                          </a>
+                      </li>
+                      <li class="navbar-item">
+                          <a href="#lokasi" class="nav-link">
+                            <i class="text-danger" data-feather="map-pin"></i>
+                            <span>Lokasi</span>
+                          </a>
+                      </li>
+                      <li class="navbar-item">
+                          <a href="#pesan" class="nav-link">
+                            <i class="text-primary fa fa-paper-plane fs-3"></i>
+                            <span>Pesan</span>
+                          </a>
+                      </li>
+                      <li class="navbar-item">
+                        <a href="#galeri" class="nav-link">
+                            <i data-feather="book-open" class="fs-3 tex-info"></i>
+                          <span>Galeri</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#even" class="nav-link">
+                            <i class="text-warning" data-feather="tv"></i>
+                            <span>Even</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#pasangan" class="nav-link">
+                            <i class="text-secondary" data-feather="users"></i>
+                            <span>Pasangan</span>
+                        </a>
+                    </li>
+                  </ul>
         </div>
-    </div>
-    <!-- nav end -->
-
-
-
-
-
-
-
+      </nav>
+    <!-- nav-end -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script>feather.replace()</script>
     <script src="js/music-bg.js"></script>
+    <script src="js/doa.js"></script>\
     <script src="js/countdown.js"></script>
-    <script src="js/doa.js"></script>
 </body>
 </html>
